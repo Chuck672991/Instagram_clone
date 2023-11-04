@@ -1,0 +1,149 @@
+/* CSS for the Post Component */
+.post {
+  border: 1px solid #ccc;
+  margin: 20px;
+  padding: 10px;
+  max-width: 600px;
+}
+
+.post_av_us {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1px;
+}
+
+.post_av_us img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post_content img {
+  width: 100%;
+  max-height: 500px; /* Adjust the max-height as needed */
+  object-fit: contain;
+}
+
+/* CSS for the Post Component */
+.post_btns {
+  display: flex;
+  align-items: center; /* Center vertically */
+  margin-top: 10px;
+}
+
+.post_btn {
+  font-size: 25px;
+  display: flex;
+  cursor: pointer;
+  color: #333;
+}
+
+
+/* Add margin to all buttons except the last one */
+.post_btn:not(:last-child) {
+  margin-right: 20px; /* 20px spacing between buttons */
+}
+
+.description {
+  margin-top: 10px;
+  line-height: 1.4;
+  flex-grow: 1; /* Allow the description to grow and fill available space */
+  color: #181616; /* Text color */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis;
+}
+
+.see-more {
+  color: rgb(110, 110, 121);
+  cursor: pointer;
+}
+
+.userName {
+  display: inline;
+  font-weight: bold;
+ 
+  margin-right: 5px; /* Add spacing between username and description */
+}
+.likeactive {
+  background-color: red; /* Change color to red when active (clicked) */
+}
+
+.saveactive {
+  background-color: black; /* Change color to black when active (clicked) */
+}
+.post_like{
+  color: red;
+}
+.post_save{
+  color: #5a5a5a;
+}
+
+.comment-form {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  border: 1px solid lightgrey; /* Add a border to the form */
+  border-radius: 5px; /* Rounded corners for the form */
+  padding: 4px; /* Add some padding to the form */
+}
+
+.comment_input {
+  border: none;
+  padding: 5px;
+  flex: 1;
+  outline: none; /* Remove the default input outline */
+}
+
+.comment_post_btn {
+  border: none;
+flex: 0.15;
+  height: 40px;
+  background-color: #12a0ffcb; /* Instagram's blue color for the button */
+  color: white; /* Text color */
+  cursor: pointer;
+  border-top: 1px solid lightgrey;
+  border-radius: 5px; /* Rounded corners for the button */
+}
+
+/* .comment_post_btn:hover {
+  background-color: #0077b5; /* Change button color on hover 
+} 
+*/
+
+.post-comments.closed {
+  display: none;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.9s;
+}
+
+/* Open state */
+.post-comments.open {
+  display: block;
+  height: auto;
+  transition: height 0.5s;
+}
+
+/* YourStyles.css */
+
+/* Comments Drop-down styles */
+.comments-dropdown {
+  display: flex;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.comment-toggle-button {
+  box-sizing: border-box;
+  font-size: 24px;
+  transition: all 0.3s; /* Add a smooth transition for all properties */
+  border-radius: 50%;
+
+}
+.comment-toggle-button:hover {
+  border: 2px solid lightgrey;
+  border-radius: 50%;
+  background-color: lightgrey;
+  cursor: pointer;
+}

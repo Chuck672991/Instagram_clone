@@ -1,0 +1,13 @@
+.header{
+    background-color: hsl(0, 0%, 100%);
+    /* position: fixed;
+    top: 0; */
+    object-fit: contain;
+    height: 50px;
+    padding: 20px;
+    width: 50%;
+    border-bottom: 1px solid lightgrey;
+}
+.header img{
+    height: 60px;
+}
